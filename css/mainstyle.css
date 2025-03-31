@@ -509,9 +509,7 @@ footer #important li{
     margin-left: 5px;
 }
 
- /* 개발중인 반응형 미디어 쿼리 시작*/
-/* 현재 슬라이드 이미지가 같이 줄어들도록 수정 - 진행 중*/
-/* 로고의 영역이 줄어들어 이미지가 줄어드는 현상 수정 - 진행 중*/
+ /* 반응형 미디어 쿼리 시작*/
 @media screen and (max-width: 1024px){
     /* 헤더 영역 */
     header #header_wrap{

@@ -8,7 +8,7 @@ function slide() {
       cnt++;
 
       // 1. 이미지 이동
-      // 첫번째, 두번째, 이미지는 정상이동, 세번째의 경우 처음으로 돌아감
+      // 첫번째, 두번째, 이미지는 정상이동, 세번째의 경우 처음으로 돌아감.
       if(cnt % imageCnt){
          $('.sliderList').stop().animate({left: '-=100%'}); // 정상이동
       } else {
