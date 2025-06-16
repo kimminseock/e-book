@@ -18,7 +18,6 @@ function slide() {
       // 2. 네비게이터
       $('.btnList span').removeClass('on').eq(cnt % imageCnt).addClass('on');
 
-      // console.log(cnt);
    };
 
    let timer = setInterval(moveSlider, 3 * 1000);
