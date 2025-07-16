@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>전지적 독자 시점</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sub.css" />
+</head>
+<body>
+<header>
+  <a href="index.html"><img src="images/logo.gif" alt="logo" /></a>
+  <button>로그인</button>
+</header>
+
+<main>
+  <section class="book-info">
+    <div class="book-cover">
+      <img src="images/love.jpg" alt="사랑또다시 책 표지" />
+    </div>
+    <div class="book-meta">
+      <h2>[독점] 사랑또다시</h2>
+      <p>작가: 김민석 | 출판사: 임시출판사</p>
+      <p>카테고리: 로맨스 | 연재: 월~금</p>
+      <p>⭐ 4.9 / 5</p>
+      <button><a href="pdf(love).html">e북으로 책읽기</a></button>
+    </div>
+  </section>
+
+  <nav class="tabs">
+    <button class="active" onclick="showTab(0)">회차</button>
+    <button onclick="showTab(1)">작품 소개</button>
+    <button onclick="showTab(2)">리뷰</button>
+  </nav>
+
+  <section class="tab-content active">
+    <div class="episode">
+      <img src="images/love.jpg" alt="사랑또다시 에피소드" />
+      <div class="episode-info">
+        <strong>0화 프롤로그</strong><br />2025.06.30 · 21.7MB
+      </div>
+    </div>
+    <div class="episode">
+      <img src="images/love.jpg" alt="사랑또다시 에피소드" />
+      <div class="episode-info">
+        <strong>1화 유료 서비스 돌입 (1)</strong><br />2025.06.30 · 33.4MB
+      </div>
+    </div>
+    <div class="episode">
+      <img src="images/love.jpg" alt="사랑또다시 에피소드" />
+      <div class="episode-info">
+        <strong>2화 유료 서비스 돌입 (2)</strong><br />2025.06.30 · 31.2MB
+      </div>
+    </div>
+    <div class="episode">
+      <img src="images/love.jpg" alt="사랑또다시 에피소드" />
+      <div class="episode-info">
+        <strong>3화 유료 서비스 돌입 (3)</strong><br />2025.06.30 · 31.2MB
+      </div>
+    </div>
+    <div class="episode">
+      <img src="images/love.jpg" alt="사랑또다시 에피소드" />
+      <div class="episode-info">
+        <strong>4화 유료 서비스 돌입 (4)</strong><br />2025.06.30 · 34.2MB
+      </div>
+    </div>
+    <div class="episode">
+      <img src="images/love.jpg" alt="사랑또다시 에피소드" />
+      <div class="episode-info">
+        <strong>5화 유료 서비스 돌입 (5)</strong><br />2025.06.30 · 35.2MB
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-content">
+    <p><strong>상세정보</strong><br />카테고리: 로맨스<br />작가: 김민석<br />연재주기: 매주 월~금<br />출판사: 임시출판사</p>
+    <p><strong>작품 소개</strong><br />본 작품은 원작 웹소설을 기반으로 제작된 전자책 콘텐츠입니다.</p>
+    <p><strong>키워드:</strong> #로맨스 #사랑 #우정</p>
+  </section>
+
+  <section class="tab-content review-box">
+    <article class="review">
+      <strong>봄가을</strong> (2025.06.30)<br />감정이 몽글몽글 해지네요.
+    </article>
+    <article class="review">
+      <strong>감정선</strong> (2025.06.30)<br />오랜간만에 로맨스 보는데 기대돼요!!!
+    </article>
+
+    <ul class="todo-list" id="todo-list"></ul>
+
+    <form class="todo-form" onsubmit="addReview(event)">
+      <label for="name-input">닉네임</label>
+      <input type="text" id="name-input" placeholder="닉네임" required />
+      <label for="todo-input">리뷰</label>
+      <textarea id="todo-input" placeholder="리뷰를 작성해보세요..." required></textarea>
+      <button type="submit">등록</button>
+    </form>
+  </section>
+</main>
+
+<script src="js/sub.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eBook 뷰어</title>
+  <link rel="stylesheet" href="css/pdf.css" />
+</head>
+<body>
+<div class="book-container" id="bookViewer">
+  <!-- 닫기 버튼 -->
+  <button class="close-button" id="closeBtn" title="닫기"><a href="sub(avata).html">×</a></button>
+
+  <!-- PDF 캔버스 -->
+  <canvas id="pdf-canvas"></canvas>
+
+  <!-- 페이지 컨트롤 -->
+  <div class="controls">
+    <button id="prev-page">← 이전</button>
+    <span id="page-info">1 / ?</span>
+    <button id="next-page">다음 →</button>
+  </div>
+</div>
+
+<!-- PDF.js 라이브러리 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="./js/pdf.js"></script>
+</body>
+</html>
